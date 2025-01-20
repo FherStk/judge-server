@@ -2,9 +2,9 @@ from dmoj.executors.java_executor import JavacExecutor
 
 
 class Executor(JavacExecutor):
-    compiler = 'javac'
-    vm = 'java'
-    jvm_regex = r'(?:java-|openjdk)(?:9|[1-9][0-9]+)'
+    compiler = 'javac17'
+    vm = 'java17'
+    jvm_regex = r'java-17-|jdk-17-|openjdk17|oracle-java17'
 
     test_program = """\
 import java.io.IOException;
